@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
     inline-size: 1200px;
     block-size: 100%;
     margin: auto;
@@ -16,6 +19,7 @@ html {
     font-family: 'Fira Sans Condensed', sans-serif;
     font-size: 18px;
     background-color: #1b1919;
+  
 }
 
 h1,
@@ -42,7 +46,6 @@ ol {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    min-width: 711px;
     padding: 133px 30px;
     gap: 30px;
 
