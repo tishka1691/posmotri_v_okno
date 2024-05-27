@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 *,
 *::before,
 *::after {
@@ -73,8 +74,6 @@ ol {
 
 .result__video-container {
     display: flex;
-    /* inline-size: 386px; */
-    /* block-size: 711px;  */
     block-size: 100%;
     inline-size: auto;
     padding-bottom: 16px;
@@ -82,8 +81,6 @@ ol {
 }
 
 .result__video {
-    /* block-size: 100%;
-  inline-size: auto; */
     width: 711px;
     height: 386px;
     object-fit: cover;
@@ -91,18 +88,14 @@ ol {
 
 }
 
-/* ---НЕ СРАБАТЫВАЕТ УДАЛЕНИЕ ПОСЛЕДНЕГО ОТСТУПА. КАК СДЕЛАТЬ?--- */
 
-
-.content__list-item {
-    /* padding-bottom: 34px; */
+/* .content__list-item {
     padding-bottom: 28px;
-}
-
-/* li:last-child { 
-   padding-bottom: 0; 
 } */
-/* __________________________________ */
+
+.content__list-item:not(:last-child) {
+    margin-bottom: 28px;
+  }
 
 .content__video-card {
     display: flex;
@@ -110,8 +103,6 @@ ol {
     align-items: flex-start;
     block-size: 100%;
     inline-size: 100%;
-    /* gap: 15px;
-  padding: 2px 0 6px 2px; */
 }
 
 .content__video-card-thumbnail {
@@ -324,22 +315,22 @@ button:active {
 /* --Карточки--- */
 
 
-/* .content__card-link_current:active {
-  background-color: #545050;
-} */
-
-.content__card-link_current {
-    background: #545050;
-}
-
-.content__card-link_current:hover {
-    text-decoration: underline;
-}
-
 .content__card-link_current:focus {
     outline: none;
 }
 
 .content__card-link_current:focus-visible {
     outline: 1px solid #fff;
+}
+
+.content__card-link_current:active {
+    background-color: #545050;
+  }
+
+.content__card-link_current {
+    background: #545050;
+}
+
+.content__card-link:hover {
+    text-decoration: underline;
 }
