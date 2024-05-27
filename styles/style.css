@@ -11,7 +11,7 @@ html {
 .page {
     display: flex;
     justify-content:center;
-    align-items: flex-start;
+    align-items: center;
     inline-size: 1200px;
     block-size: 100%;
     margin: auto;
@@ -46,7 +46,6 @@ ol {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding: 133px 30px;
     gap: 30px;
 
 }
