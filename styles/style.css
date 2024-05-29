@@ -45,11 +45,10 @@ ol {
 
 .content {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-end;
     gap: 30px;
-    min-width: 1.140px;
-    min-height: 534px;
+    width: 1140px;
 }
 
 .result {
@@ -78,7 +77,7 @@ ol {
 
 .result__video-container {
     display: flex;
-    block-size: 100%;
+    block-size: 386px;
     inline-size: 711px;
     margin-bottom: 16px;
     /* padding-bottom: 16px; */
@@ -86,8 +85,8 @@ ol {
 }
 
 .result__video {
-    inline-size: 100%;
-    height: 386px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
 
@@ -120,6 +119,7 @@ ol {
 .content__video-card-description-container {
     flex-grow: 1;
     padding-top: 4px;
+    inline-size: 200px;
 
 }
 
@@ -175,6 +175,7 @@ ol {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    word-break: break-all;
 }
 
 .content__video-card-description {
@@ -183,6 +184,7 @@ ol {
     font-weight: 400;
     line-height: 16.2px;
     text-align: left;
+    word-break: break-all;
 }
 
 .visually-hidden {
@@ -203,7 +205,7 @@ fieldset {
     display: flex;
     width: fit-content;
     gap: 5px;
-    align-items: center;
+    align-items: flex-start;
     cursor: pointer;
 }
 
@@ -323,15 +325,19 @@ button:focus-visible {
 /* --Карточки--- */
 
 
-.content__card-link_current:focus {
+
+.content__card-link_current:focus,
+.content__card-link:focus {
     outline: none;
 }
 
-.content__card-link_current:focus-visible {
+.content__card-link_current:focus-visible,
+.content__card-link:focus-visible {
     outline: 1px solid #fff;
 }
 
-.content__card-link_current:active {
+.content__card-link_current:active,
+.content__card-link:active  {
     background-color: #545050;
   }
 
@@ -340,6 +346,5 @@ button:focus-visible {
 }
 
 .content__card-link:hover {
-    /* text-decoration: underline; */
     text-decoration: underline 1px #FFF;
 }
